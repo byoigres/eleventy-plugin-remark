@@ -1,10 +1,10 @@
-import eleventyRemark from './src/eleventyRemark';
+const eleventyRemark = require('./src/eleventyRemark');
 
 const defaultEleventyRemarkOptions = {
   plugins: [],
 };
 
-export default {
+module.exports = {
   initArguments: {},
   configFunction: (eleventyConfig, pluginOptions = {}) => {
     const options = Object.assign(

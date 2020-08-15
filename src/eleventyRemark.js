@@ -1,5 +1,5 @@
-import remark from 'remark';
-import html from 'remark-html';
+const remark = require('remark');
+const html = require('remark-html');
 
 function requirePlugins(plugins) {
 
@@ -54,4 +54,4 @@ function eleventyRemark(options) {
   };
 }
 
-export default eleventyRemark;
+module.exports = eleventyRemark;
